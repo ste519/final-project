@@ -46,7 +46,7 @@ const App = () => {
       return
     }
     const newNote = { tag: tag, content: inputValue, time: new Date() }
-    const newNotes = [...notes, newNote]
+    const newNotes = [newNote, ...notes]
     setNotes(newNotes)
     setInputValue('')
     setTag('')

@@ -12,7 +12,7 @@ const NoteItem = ({ note, handleDelete, handleEdit }) => {
 
     return (
         <>
-            <Dialog open={open} onClose={handleClose} >
+            <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
                 <DialogContent>
                     <Typography>{note.tag}</Typography>
                     <Typography variant="body2" color="text.secondary" >    {time}</Typography>

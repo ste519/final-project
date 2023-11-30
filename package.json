@@ -2,6 +2,7 @@
   "name": "final-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ste519.github.io/final-project/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
