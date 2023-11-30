@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ql-toolbar {
+  border-radius: 5px 5px 0 0;
+}
+
+.quill {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quill .ql-container {
+  flex: 1 1 auto;
+  border-radius: 0 0 5px 5px;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.note-content{
+  max-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.note-content img {
+  width: 100%;
+}
