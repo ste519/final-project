@@ -30,7 +30,7 @@ code {
   overflow: auto;
 }
 
-.note-content{
+.note-content {
   max-height: 200px;
   width: 100%;
   overflow: hidden;
@@ -38,4 +38,38 @@ code {
 
 .note-content img {
   width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  margin: 30px 0;
+  font-family: Jost, sans-serif
+}
+
+.header-img {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px
+}
+
+.note-wrapper {
+  overflow: auto;
+  width: 102%;
+  height: 100%;
+  padding: 5
+}
+
+.notepad-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px
 }

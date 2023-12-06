@@ -1,16 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { NoteContext } from '../providers/NoteContext';
 
-const DeleteDialog = ({ open, handleClose, handleConfirm }) => {
+const DeleteDialog = () => {
+    const { showDeleteDialog, setShowDeleteDialog, deleteNote } = useContext(NoteContext)
+
+    const handleClose = () => setShowDeleteDialog(false)
+    const handleConfirm = () => {
+        setShowDeleteDialog(false);
+        deleteNote()
+    }
 
     return (
         <Dialog
-            open={open}
+            open={showDeleteDialog}
             onClose={handleClose}
             aria-labelledby="alert-dialog-title"
             aria-describedby="alert-dialog-description"
